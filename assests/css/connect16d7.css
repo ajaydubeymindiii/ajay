@@ -1,0 +1,224 @@
+/* Basic CSS Reset */
+.ws-request-modal div, .ws-request-modal span, .ws-request-modal figcaption, .ws-request-modal figure {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.ws-request-modal figcaption, .ws-request-modal figure, {
+	display: block;
+}
+
+/*MODAL STYLES*/
+.ws-request-modal * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ws-request-modal {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 500;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  -ms-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.ws-request-modal a,
+.ws-request-modal button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+  -ms-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.ws-request-modal input {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  outline: none;
+}
+
+.ws-request-modal img {
+  image-rendering: auto;
+  -ms-interpolation-mode: bicubic;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  max-width: 100%;
+}
+
+.ws-request-modal .request-box {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  top: 0;
+  left: -400px;
+  width: 480px;
+  padding: 10px 10px 10px 20px;
+  height: 180px;
+  line-height: 35px;
+  background: url("../img/modal-bg.png");
+  background: rgba(0,0,0,0.5);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin: 0px auto 10px;
+  -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.5);
+  overflow: hidden;
+ /* -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;*/
+}
+.ws-request-modal .request-box button {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px 10px 5px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 17px;
+}
+.ws-request-modal .request-box button i {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  float: left;
+  margin: -1px 7px 0 0;
+}
+.ws-request-modal .request-box figure {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+}
+.ws-request-modal .request-box figure .crop-box {
+  width: 140px;
+  height: 150px;
+  overflow: hidden;
+}
+.ws-request-modal .request-box figure figcaption {
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+.ws-request-modal .request-box figure figcaption button.profile {
+  border: 1px solid #2e5c73;
+  text-shadow: 0px -1px 0px #2e5c73;
+  background: #38708c url("../img/profile-bg.png") repeat-x;
+  background: -webkit-linear-gradient(top, #4285a6, #38708c);
+}
+.ws-request-modal .request-box figure figcaption button.profile i.profile-icn {
+  background: url("../img/profile-icn.png") no-repeat;
+}
+.ws-request-modal .request-box figure figcaption button.profile:hover {
+  background: -webkit-linear-gradient(top, #38708c, #4285a6);
+}
+.ws-request-modal .request-box .about {
+  padding: 0 0 0 15px;
+  float: left;
+  width: 305px;
+}
+.ws-request-modal .request-box .about button {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px 10px 5px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 17px;
+}
+.ws-request-modal .request-box .about button i {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  float: left;
+  margin: -1px 7px 0 0;
+}
+.ws-request-modal .request-box .about .user {
+  color: #fff;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 800;
+  line-height: 24px;
+  float: left;
+  margin-bottom: 10px;
+}
+.ws-request-modal .request-box .about .headline {
+  font-size: 0.75em;
+  color: #fff;
+  color: #fff;
+  font-style: italic;
+  max-width: 315px;
+  line-height: 15px;
+}
+.ws-request-modal .request-box .about .info {
+  clear: both;
+  font-size: 0.875em;
+  color: #fff;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 18px;
+}
+.ws-request-modal .request-box .about .info .age {
+  margin-right: 4px;
+}
+.ws-request-modal .request-box .about .info .sex {
+  margin: 0 4px;
+}
+.ws-request-modal .request-box .about .info .location {
+  margin-left: 4px;
+}
+.ws-request-modal .request-box .about .button-container {
+  margin: 7px 0 0 -2px;
+}
+.ws-request-modal .request-box .about .button-container button {
+  width: 135px;
+}
+.ws-request-modal .request-box .about .button-container button.decline {
+  border: 1px solid #800000;
+  text-shadow: 0px -1px 0px #750000;
+  background: #8f0000 url("../img/block-bg.png") repeat-x;
+  margin-left: 3px;
+  background: -webkit-linear-gradient(top, #a80000, #8f0000);
+}
+
+.ws-request-modal .request-box .about .button-container button.decline:hover {
+  background: -webkit-linear-gradient(top, #8f0000, #a80000);
+}
+
+.ws-request-modal .request-box .about .button-container button.accept {
+  border: 1px solid #2b8000;
+  text-shadow: 0px -1px 0px #277500;
+  background: #308f00 url("../img/favorites-bg.png") repeat-x;
+  background: -webkit-linear-gradient(top, #38a800, #308f00);
+}
+
+.ws-request-modal .request-box .about .button-container button.accept:hover {
+  background: -webkit-linear-gradient(top, #308f00, #38a800);
+}
+.ws-request-modal.active {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+/*.ws-request-modal.active .request-box {
+  left: 0px;
+}*/
